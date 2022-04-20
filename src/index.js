@@ -1,12 +1,20 @@
 const myListDiv = document.getElementById("list");
-const myHobbies = ["programming", "motorcycles", "movies", "home"]
+const myNumbers = [
+    2,
+    4,
+    6,
+    8,
+    12,
 
-function addName(name) {
+];
+
+function myName(name) {
     const h1 = document.createElement("h1");
     h1.innerText = name;
     h1.className = "name";
     myListDiv.appendChild(h1);
 }
-myHobbies.forEach(hobby => {
-    addName(hobby);
-});
+
+const multi = myNumbers.map(number => number*2)
+
+multi.forEach( number=> console.log(number));
